@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "poster": "pkg:/images/icons/search.png",
+	  "icons": "search",
+      "title": "Búsqueda",
+      "duration": 0.01
+    },
+    {
+      "id": "2",
+      "poster": "pkg:/images/icons/home.png",
+	  "icons": "home",
+      "title": "Inicio",
+      "duration": 0.02
+    },
+    {
+      "id": "3",
+      "poster": "pkg:/images/icons/play.png",
+	  "icons": "play",
+      "title": "Ver ahora",
+      "duration": 0.03
+    },
+    {
+      "id": "4",
+      "poster": "pkg:/images/icons/calendar.png",
+	  "icons": "calendar",
+      "title": "Más recientes",
+      "duration": 0.04
+    },
+    {
+      "id": "5",
+      "poster": "pkg:/images/icons/monitor.png",
+	  "icons": "monitor",
+      "title": "Series",
+      "duration": 0.05
+    },
+    {
+      "id": "6",
+      "poster": "pkg:/images/icons/movie.png",
+	  "icons": "movie",
+      "title": "Películas",
+      "duration": 0.06
+    },
+    {
+      "id": "7",
+      "poster": "pkg:/images/icons/plus.png",
+	  "icons": "plus",
+      "title": "Mi lista",
+      "duration": 0.07
+    }
+]
