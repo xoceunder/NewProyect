@@ -11,20 +11,12 @@
     <script type="text/brightscript" uri="UILogic/ContentTaskLogic.brs" />
     <script type="text/brightscript" uri="UILogic/GridScreenLogic.brs" />
     <script type="text/brightscript" uri="UILogic/EpisodesScreenLogic.brs" />
+    <script type="text/brightscript" uri="UILogic/MenuScreenLogic.brs" />
 	<interface>
 		<!-- Main menu close handler -->
 		<field id="close" type="bool"/>
 	</interface>
     <children>
-        <LayoutGroup 
-        id = "menuGroup"
-        layoutDirection = "horiz"
-        horizAlignment= "left"
-        vertAlignment = "custom">
-            <CollapsedMenu 
-              id="collapsedMenu" 
-              translation="[0,0]"/>
-        </LayoutGroup>
         <!-- LoadingIndicator should be visible only in case of waiting for content -->
         <Label
             id="loadingIndicator"

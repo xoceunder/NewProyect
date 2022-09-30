@@ -9,34 +9,8 @@ sub Init()
     m.loadingIndicator = m.top.FindNode("loadingIndicator") ' store loadingIndicator node to m
 	
     InitScreenStack()
-    m.MenuScreen = m.top.findNode("CollapsedMenu")
-	m.MenuScreen.observeField("itemSelected", "OnMenuSelection")
-    m.MenuScreen.visible = true
-    m.MenuScreen.setFocus(true)
+    ShowMenuScreen()
 	
-end sub
-
-
-sub OnMenuSelection()
-  Dbg("Menu item:", m.MenuScreen.itemSelected)
-  if m.MenuScreen.itemSelected=0
-    'ShowSearchScreen()
-  else if m.MenuScreen.itemSelected=1
-    'ShowHomeScreen()
-  else if m.MenuScreen.itemSelected=2
-    'ShowPlayScreen()
-  else if m.MenuScreen.itemSelected=3
-    'ShowRecentScreen()
-  else if m.MenuScreen.itemSelected=4
-    'ShowSeriesScreen()
-    'RunSeriesTask() ' retrieving content
-  else if m.MenuScreen.itemSelected=5
-    ShowGridScreen()
-    RunContentTask() ' retrieving content
-  else if m.MenuScreen.itemSelected=6
-    'ShowReadyScreen()
-    'RunReadyTask() ' retrieving content
-  end if
 end sub
 
 
@@ -53,8 +27,6 @@ function OnkeyEvent(key as String, press as Boolean) as Boolean
             result = true
         ' handle "back" key press
         else if key = "replay" then
-		    ?m.top.GetScene()
-			m.top.rowList.SetFocus(true)
             result = true
         else if key = "back"
             numberOfScreens = m.screenStack.Count()
